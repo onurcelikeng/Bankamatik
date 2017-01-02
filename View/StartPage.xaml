@@ -1,0 +1,141 @@
+﻿<Page
+    x:Class="Bankamatik.View.StartPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Bankamatik.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition>
+                <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                    <SlideNavigationTransitionInfo/>
+                </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+            </NavigationThemeTransition>
+        </TransitionCollection>
+    </Page.Transitions>
+
+    <Grid>
+
+        <Grid.Background>
+            <SolidColorBrush Color="#c8c8c8"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid x:Name="grid1" Grid.Column="0" Margin="0.5" Background="#ffffff" Tapped="grid1_Tapped">
+
+                <Image Source="ms-appx:///Assets/Logo/garanti.png" Stretch="Uniform" Margin="35"/>
+
+            </Grid>
+
+            <Grid x:Name="grid2" Grid.Column="1" Margin="0.5" Background="#ffffff" Tapped="grid2_Tapped">
+
+                <Image Source="ms-appx:///Assets/Logo/yapikredi.png" Stretch="Uniform" Margin="30"/>
+
+            </Grid>
+
+        </Grid>
+
+        <Grid Grid.Row="1">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid x:Name="grid3" Grid.Column="0" Margin="0.5" Background="#ffffff" Tapped="grid3_Tapped">
+
+                <Image Source="ms-appx:///Assets/Logo/isbank.png" Stretch="Uniform" Margin="10"/>
+
+            </Grid>
+
+            <Grid x:Name="grid4" Grid.Column="1" Margin="0.5" Background="#ffffff" Tapped="grid4_Tapped">
+
+                <Image Source="ms-appx:///Assets/Logo/vakıfbank.png" Stretch="Uniform" Margin="40"/>
+
+            </Grid>
+
+        </Grid>
+
+        <Grid Grid.Row="2">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid x:Name="grid5" Grid.Column="0" Margin="0.5" Background="#ffffff" Tapped="grid5_Tapped">
+
+                <Image Source="ms-appx:///Assets/Logo/akbank.png" Stretch="Uniform" Margin="30"/>
+
+            </Grid>
+
+            <Grid x:Name="grid6" Grid.Column="1" Margin="0.5" Background="#ffffff" Tapped="grid6_Tapped">
+
+                <Image Source="ms-appx:///Assets/Logo/ziraatbank.png" Stretch="Uniform" Margin="30"/>
+
+            </Grid>
+
+        </Grid>
+
+        <Grid Grid.Row="3">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid x:Name="grid7" Grid.Column="0" Margin="0.5" Background="#ffffff" Tapped="grid7_Tapped">
+
+                <Image Source="ms-appx:///Assets/Logo/ingbank.png" Stretch="Uniform" Margin="30"/>
+
+            </Grid>
+
+            <Grid x:Name="grid8" Grid.Column="1" Margin="0.5" Background="#ffffff" Tapped="grid8_Tapped">
+
+                <Image Source="ms-appx:///Assets/Logo/halkbank.png" Stretch="Uniform" Margin="30"/>
+
+            </Grid>
+
+        </Grid>
+
+        <Grid Grid.Row="4">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid x:Name="grid9" Grid.Column="0" Margin="0.5" Background="#ffffff" Tapped="grid9_Tapped">
+
+                <Image Source="ms-appx:///Assets/Logo/tebbank.png" Stretch="Uniform" Margin="20"/>
+
+            </Grid>
+
+            <Grid x:Name="grid10" Grid.Column="1" Margin="0.5" Background="#ffffff" Tapped="grid10_Tapped">
+
+                <Image Source="ms-appx:///Assets/Logo/finansbank.png" Stretch="Uniform" Margin="40"/>
+
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+    
+</Page>
